@@ -1,0 +1,14 @@
+baseURL = 'https://carlinhoshk.github.io/cblog/'
+languageCode = 'pt-br'
+title = 'C blog'
+theme = "terminal"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = false
+
