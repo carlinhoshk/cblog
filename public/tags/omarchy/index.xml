@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Omarchy on C_blog</title>
+    <link>http://localhost:1313/cblog/tags/omarchy/</link>
+    <description>Recent content in Omarchy on C_blog</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/cblog/tags/omarchy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Habilitando novamente o suspend no Omarchy-Menu</title>
+      <link>http://localhost:1313/cblog/posts/habilitando-novamente-o-suspend-menu/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cblog/posts/habilitando-novamente-o-suspend-menu/</guid>
+      <description>&lt;h1 id=&#34;primeiro-o-que-aconteceu-com-o-botão-suspend&#34;&gt;Primeiro o que aconteceu com o botão Suspend?&lt;/h1&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;http://localhost:1313/cblog/images/Pasted%20image%2020260102172909.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;Para quem utiliza versões anteriores percebeu que no commit em 8 de dezembro na atualização para a versão &lt;a href=&#34;https://github.com/basecamp/omarchy/releases/tag/v3.2.3&#34;&gt;v3.2.3&lt;/a&gt;&#xA;!&lt;img src=&#34;http://localhost:1313/cblog/images/Pasted%20image%2020260101211929.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;Foi retirado o menu para suspender o que gerou bastante comentários da comunidade como é possível ver nos comentários do corpo do &lt;a href=&#34;https://github.com/basecamp/omarchy/commit/fc04525f032656ceb81f10045ae702e00356e8c5&#34;&gt;commit&lt;/a&gt;&#xA;!&lt;img src=&#34;http://localhost:1313/cblog/images/Pasted%20image%2020260101212148.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;E abaixo vemos a solução do DHH sobre adicionar uma bind para suspender o que eu achei valido, mas é ruim tirar hábitos depois de 2 versões usando o Omarchy Menu -&amp;gt; System -&amp;gt; Suspend.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
