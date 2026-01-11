@@ -158,4 +158,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git branch -D hostinger-deploy
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;All done! Site synced, processed, committed, built, and deployed.&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>About</title><link>https://carlinhoshk.github.io/cblog/about/</link><pubDate>Fri, 09 Jan 2026 19:31:59 -0300</pubDate><guid>https://carlinhoshk.github.io/cblog/about/</guid><description>&lt;p&gt;Sou Carlos Oliveira, desenvolvedor com foco em sistemas, baixo nível, analista e engenharia de software, aquela que começa entendendo como as coisas funcionam por baixo.&lt;/p&gt;
+&lt;p&gt;Meu interesse por tecnologia sempre esteve menos em frameworks da moda e mais em fundamentos: sistemas operacionais, kernel Linux, containers, concorrência, arquitetura e o impacto real das decisões técnicas no longo prazo. Gosto de enxergar código como estrutura.&lt;/p&gt;
+&lt;p&gt;Tenho experiência com desenvolvimento backend, programação orientada a objetos e venho explorando com profundidade o ecossistema Linux desde o uso e contribuição ao Omarchy com Arch Linux.
+Também tenho background em visão computacional e machine learning, área onde atuei antes de me aprofundar na revolução das LLMs.&lt;/p&gt;</description></item></channel></rss>
