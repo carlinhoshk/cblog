@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/cblog/en/categories/</loc>
+    <loc>https://carlinhoshk.github.io/cblog/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/cblog/categories/"
+                href="https://carlinhoshk.github.io/cblog/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/cblog/en/categories/"
+                href="https://carlinhoshk.github.io/cblog/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cblog/en/tags/</loc>
+    <loc>https://carlinhoshk.github.io/cblog/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/cblog/tags/"
+                href="https://carlinhoshk.github.io/cblog/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/cblog/en/tags/"
+                href="https://carlinhoshk.github.io/cblog/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cblog/en/</loc>
+    <loc>https://carlinhoshk.github.io/cblog/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/cblog/"
+                href="https://carlinhoshk.github.io/cblog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/cblog/en/"
+                href="https://carlinhoshk.github.io/cblog/en/"
                 />
   </url>
 </urlset>

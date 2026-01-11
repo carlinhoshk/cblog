@@ -74,7 +74,7 @@ site = "carlinhoshk_sh"
 
 [languages.pt]
 languageName = "Português"
-title = "Terminal"
+title = "C_blog"
 weight = 1
 
 [languages.pt.params]
