@@ -6,8 +6,15 @@
     <description>Recent content in Linux on C_blog</description>
     <generator>Hugo</generator>
     <language>pt</language>
-    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/cblog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Explorando buffer overflow em C</title>
+      <link>http://localhost:1313/cblog/posts/buffer-overflow/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cblog/posts/buffer-overflow/</guid>
+      <description>&lt;h1 id=&#34;a-velha-guarda-antes-dos-gc&#34;&gt;A velha guarda antes dos GC&lt;/h1&gt;&#xA;&lt;p&gt;Em tempos de &lt;a href=&#34;https://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29&#34;&gt;GC&lt;/a&gt; nos anos 80/90 código em alto nível como C sempre era um problema se o programador não souber o que estava fazendo com a integridade dos dados pois é crucial a necessidade de alocar da maneira mais segura possível e com &lt;a href=&#34;https://pt.wikipedia.org/wiki/Trade-off&#34;&gt;tradeoff&lt;/a&gt; bem afiado para não desenvolver um monstro e deixar tudo a cargo do compilador que eventualmente irá deixar seu binário de aplicação lerdo.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Habilitando novamente o suspend no Omarchy-Menu</title>
       <link>http://localhost:1313/cblog/posts/habilitando-novamente-o-suspend-menu/</link>

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/cblog/tags/bash/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/cblog/tags/c/</loc>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,20 +18,20 @@
                 href="http://localhost:1313/cblog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cblog/posts/habilitando-novamente-o-suspend-menu/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/cblog/posts/buffer-overflow/</loc>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cblog/tags/hacking/</loc>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/tags/linux/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cblog/tags/omarchy/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/posts/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/tags/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -44,19 +44,28 @@
                 />
   </url><url>
     <loc>http://localhost:1313/cblog/tags/tutorial/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/posts/criando-blog-com-hugo/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/tags/automa%C3%A7%C3%A3o/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cblog/tags/bash/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/tags/blog/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cblog/posts/habilitando-novamente-o-suspend-menu/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cblog/tags/omarchy/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/tags/python/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cblog/about/</loc>
     <lastmod>2026-01-09T19:31:59-03:00</lastmod>
