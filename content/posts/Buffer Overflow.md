@@ -14,7 +14,7 @@ Em tempos de [GC](https://en.wikipedia.org/wiki/Garbage_collection_(computer_sci
 ![Image Description](/cblog/images/Pasted%20image%2020260114165629.png)
 Estou indo para a 3 vez em que leio esse [livro](https://github.com/imrk51/hacking-books/blob/master/Jon%20Erickson%20-%20Hacking%20Art%20of%20Exploitation.pdf) ele é antigo eu gosto mais dele por como ele se aprofunda em programação C, ASM, ShellScript do que realmente hacking. 
 No capitulo 0x320 somos introduzido ao exemplo:
-```clike
+```c
 #include <stdio.h>
 #include <string.h>
 
