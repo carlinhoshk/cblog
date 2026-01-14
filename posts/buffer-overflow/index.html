@@ -5,28 +5,28 @@
 #<a href=https://carlinhoshk.github.io/cblog/tags/hacking/>Hacking</a>&nbsp;
 #<a href=https://carlinhoshk.github.io/cblog/tags/tutorial/>tutorial</a>&nbsp;</span><div class=post-content><div><h1 id=a-velha-guarda-antes-dos-gc>A velha guarda antes dos GC<a href=#a-velha-guarda-antes-dos-gc class=hanchor arialabel=Anchor>#</a></h1><p>Em tempos de <a href=https://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29>GC</a> nos anos 80/90 código em alto nível como C sempre era um problema se o programador não souber o que estava fazendo com a integridade dos dados pois é crucial a necessidade de alocar da maneira mais segura possível e com <a href=https://pt.wikipedia.org/wiki/Trade-off>tradeoff</a> bem afiado para não desenvolver um monstro e deixar tudo a cargo do compilador que eventualmente irá deixar seu binário de aplicação lerdo.</p><h1 id=explorando-buffer-overflow-0x320>Explorando Buffer Overflow 0x320<a href=#explorando-buffer-overflow-0x320 class=hanchor arialabel=Anchor>#</a></h1><p><img src=/cblog/images/Pasted%20image%2020260114165629.png alt="Image Description">
 Estou indo para a 3 vez em que leio esse <a href=https://github.com/imrk51/hacking-books/blob/master/Jon%20Erickson%20-%20Hacking%20Art%20of%20Exploitation.pdf>livro</a> ele é antigo eu gosto mais dele por como ele se aprofunda em programação C, ASM, ShellScript do que realmente hacking.
-No capitulo 0x320 somos introduzido ao exemplo:</p><pre tabindex=0><code class=language-clike data-lang=clike>#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-
-int main(int argc, char *argv[]) {
-  int value = 5;
-  char primeiro_buffer[8], segundo_buffer[8];
-
-  strcpy(primeiro_buffer, &#34;um&#34;); /* Coloca &#34;one&#34; em primeiro_buffer. */
-  strcpy(segundo_buffer, &#34;dois&#34;); /* Coloca &#34;two&#34; em segundo_buffer. */
-
-  printf(&#34;[BEFORE] segundo_buffer está em %p e contém &#39;%s&#39;\n&#34;, segundo_buffer, segundo_buffer);
-  printf(&#34;[BEFORE] primeiro_buffer está em %p e contém &#39;%s&#39;\n&#34;, primeiro_buffer, primeiro_buffer);
-  printf(&#34;[BEFORE] value está em %p e é %d (0x%08x)\n&#34;, &amp;value, value, value);
-
-  printf(&#34;\n[STRCPY] copiando %d bytes para segundo_buffer\n\n&#34;, strlen(argv[1]));
-  strcpy(segundo_buffer, argv[1]); /* Copia o primeiro argumento para segundo_buffer. */
-
-  printf(&#34;[AFTER] segundo_buffer está em %p e contém &#39;%s&#39;\n&#34;, segundo_buffer, segundo_buffer);
-  printf(&#34;[AFTER] primeiro_buffer está em %p e contém &#39;%s&#39;\n&#34;, primeiro_buffer, primeiro_buffer);
-  printf(&#34;[AFTER] value está em %p e é %d (0x%08x)\n&#34;, &amp;value, value, value);
-}
-</code></pre><p>Vamos destrinchar o código por partes:
+No capitulo 0x320 somos introduzido ao exemplo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;stdio.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;string.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>(<span style=color:#66d9ef>int</span> argc, <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>argv[]) {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>int</span> value <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>char</span> primeiro_buffer[<span style=color:#ae81ff>8</span>], segundo_buffer[<span style=color:#ae81ff>8</span>];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>strcpy</span>(primeiro_buffer, <span style=color:#e6db74>&#34;um&#34;</span>); <span style=color:#75715e>/* Coloca &#34;one&#34; em primeiro_buffer. */</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>strcpy</span>(segundo_buffer, <span style=color:#e6db74>&#34;dois&#34;</span>); <span style=color:#75715e>/* Coloca &#34;two&#34; em segundo_buffer. */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>printf</span>(<span style=color:#e6db74>&#34;[BEFORE] segundo_buffer está em %p e contém &#39;%s&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, segundo_buffer, segundo_buffer);
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>printf</span>(<span style=color:#e6db74>&#34;[BEFORE] primeiro_buffer está em %p e contém &#39;%s&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, primeiro_buffer, primeiro_buffer);
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>printf</span>(<span style=color:#e6db74>&#34;[BEFORE] value está em %p e é %d (0x%08x)</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, <span style=color:#f92672>&amp;</span>value, value, value);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>printf</span>(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>[STRCPY] copiando %d bytes para segundo_buffer</span><span style=color:#ae81ff>\n\n</span><span style=color:#e6db74>&#34;</span>, <span style=color:#a6e22e>strlen</span>(argv[<span style=color:#ae81ff>1</span>]));
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>strcpy</span>(segundo_buffer, argv[<span style=color:#ae81ff>1</span>]); <span style=color:#75715e>/* Copia o primeiro argumento para segundo_buffer. */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>printf</span>(<span style=color:#e6db74>&#34;[AFTER] segundo_buffer está em %p e contém &#39;%s&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, segundo_buffer, segundo_buffer);
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>printf</span>(<span style=color:#e6db74>&#34;[AFTER] primeiro_buffer está em %p e contém &#39;%s&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, primeiro_buffer, primeiro_buffer);
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>printf</span>(<span style=color:#e6db74>&#34;[AFTER] value está em %p e é %d (0x%08x)</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, <span style=color:#f92672>&amp;</span>value, value, value);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Vamos destrinchar o código por partes:
 <img src=/cblog/images/Pasted%20image%2020260114172148.png alt="Image Description"></p><ul><li>Aqui nós iniciamos uma variável value um inteiro com valor 5.</li><li>E aqui o mais importante abrimos dois arrays de Strings-buffers com tamanho fixo de 8.
 Logo se o tamanho do array é 8 então abaixo podemos colocar strings dentro deles podem até ser maior como na foto usamos a lib strcpy ( não recomendada ) e atribuímos Strings ao nosso buffer
 <img src=/cblog/images/Pasted%20image%2020260114172825.png alt="Image Description">
