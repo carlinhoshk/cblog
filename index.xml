@@ -160,11 +160,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;All done! Site synced, processed, committed, built, and deployed.&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Habilitando novamente o suspend no Omarchy-Menu</title><link>https://carlinhoshk.github.io/cblog/posts/habilitando-novamente-o-suspend-menu/</link><pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate><guid>https://carlinhoshk.github.io/cblog/posts/habilitando-novamente-o-suspend-menu/</guid><description>&lt;h1 id="primeiro-o-que-aconteceu-com-o-botão-suspend"&gt;Primeiro o que aconteceu com o botão Suspend?&lt;/h1&gt;
-&lt;p&gt;![[Pasted image 20260102172909.png]]
+&lt;p&gt;&lt;img src="https://carlinhoshk.github.io/cblog/images/Pasted%20image%2020260102172909.png" alt="Image Description"&gt;
 Para quem utiliza versões anteriores percebeu que no commit em 8 de dezembro na atualização para a versão &lt;a href="https://github.com/basecamp/omarchy/releases/tag/v3.2.3"&gt;v3.2.3&lt;/a&gt;
-![[Pasted image 20260101211929.png]]
+&lt;img src="https://carlinhoshk.github.io/cblog/images/Pasted%20image%2020260101211929.png" alt="Image Description"&gt;
 Foi retirado o menu para suspender o que gerou bastante comentários da comunidade como é possível ver nos comentários do corpo do &lt;a href="https://github.com/basecamp/omarchy/commit/fc04525f032656ceb81f10045ae702e00356e8c5"&gt;commit&lt;/a&gt;
-![[Pasted image 20260101212148.png]]
+&lt;img src="https://carlinhoshk.github.io/cblog/images/Pasted%20image%2020260101212148.png" alt="Image Description"&gt;
 E abaixo vemos a solução do DHH sobre adicionar uma bind para suspender o que eu achei valido, mas é ruim tirar hábitos depois de 2 versões usando o Omarchy Menu -&amp;gt; System -&amp;gt; Suspend.&lt;/p&gt;</description></item><item><title>About</title><link>https://carlinhoshk.github.io/cblog/about/</link><pubDate>Fri, 09 Jan 2026 19:31:59 -0300</pubDate><guid>https://carlinhoshk.github.io/cblog/about/</guid><description>&lt;p&gt;Sou Carlos Oliveira, desenvolvedor com foco em sistemas, baixo nível, analista e engenharia de software, aquela que começa entendendo como as coisas funcionam por baixo.&lt;/p&gt;
 &lt;p&gt;Meu interesse por tecnologia sempre esteve menos em frameworks da moda e mais em fundamentos: sistemas operacionais, kernel Linux, containers, concorrência, arquitetura e o impacto real das decisões técnicas no longo prazo. Gosto de enxergar código como estrutura.&lt;/p&gt;
 &lt;p&gt;Tenho experiência com desenvolvimento backend, programação orientada a objetos e venho explorando com profundidade o ecossistema Linux desde o uso e contribuição ao Omarchy com Arch Linux.
