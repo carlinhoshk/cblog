@@ -14,4 +14,3 @@ Também tenho background em visão computacional e machine learning, área onde 
 Este blog nasceu como um espaço para organizar ideias, notas técnicas e reflexões que normalmente ficariam espalhadas em arquivos locais. Aqui publico desde estudos sobre sistemas e programação até anotações mais cruas, conectadas entre si, no formato que considero mais honesto: texto simples, links e contexto.
 
 Escrevo para organizar, documentar aprendizado e compartilhar.
-
