@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bash on C_blog</title><link>https://carlinhoshk.github.io/cblog/tags/bash/</link><description>Recent content in Bash on C_blog</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://carlinhoshk.github.io/cblog/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://carlinhoshk.github.io/cblog/posts/criando-blog-com-hugo/</link><pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate><guid>https://carlinhoshk.github.io/cblog/posts/criando-blog-com-hugo/</guid><description>&lt;p&gt;Script para versionar foto&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bash on C_blog</title><link>https://carlinhoshk.github.io/cblog/tags/bash/</link><description>Recent content in Bash on C_blog</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://carlinhoshk.github.io/cblog/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Instalando tmux aprendendo basico</title><link>https://carlinhoshk.github.io/cblog/posts/instalando-tmux-e-aprendendo-basico/</link><pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate><guid>https://carlinhoshk.github.io/cblog/posts/instalando-tmux-e-aprendendo-basico/</guid><description>&lt;h1 id="o-que-é-tmux"&gt;O que é Tmux&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://carlinhoshk.github.io/cblog/images/Pasted%20image%2020260112111819.png" alt="Image Description"&gt;
+Tmux é um emulador de terminal open source Unix like. Ele permite você ter vários &lt;em&gt;terminais&lt;/em&gt; em &lt;em&gt;instancias&lt;/em&gt; e &lt;em&gt;servers&lt;/em&gt;.
+o Tmux não se resume a só isso mas vamos focar nessas duas coisas.&lt;/p&gt;
+&lt;h1 id="porque-usar"&gt;Porque usar?&lt;/h1&gt;
+&lt;p&gt;Se você utiliza o terminal uma hora ou outra sua necessidade por múltiplas janelas irá crescer ou a vontade de ter&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Workspace/instancia para uma sessão SSH que nunca desconecta,&lt;/li&gt;
+&lt;li&gt;Workspace para seu projeto frontend,&lt;/li&gt;
+&lt;li&gt;Workspace para o projeto backend,&lt;/li&gt;
+&lt;li&gt;Workspace para debugar um app linux que você use diariamente como discord ou browser&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="um-pouco-sobre-a-interface"&gt;Um pouco sobre a interface&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://carlinhoshk.github.io/cblog/images/Pasted%20image%2020260112112702.png" alt="Image Description"&gt;&lt;br&gt;
+Não vamos se aprofundar muito para não ficar massivo de ler
+Nesse exemplo da &lt;a href="https://github.com/tmux/tmux/wiki/Getting-Started"&gt;documentação&lt;/a&gt; official vemos como é a interface tmux são eles:&lt;/p&gt;</description></item><item><title/><link>https://carlinhoshk.github.io/cblog/posts/criando-blog-com-hugo/</link><pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate><guid>https://carlinhoshk.github.io/cblog/posts/criando-blog-com-hugo/</guid><description>&lt;p&gt;Script para versionar foto&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; os
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; re
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; shutil
